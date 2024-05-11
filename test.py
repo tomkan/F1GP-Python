@@ -168,12 +168,10 @@ with open("f1.dump", "rb") as f:
         pos = skip_to_next(pos+skip, data)
 
 
-    # plt.plot(X, Y)
-    # plt.xlabel('X-axis')
-    # plt.ylabel('Y-axis')
+    plt.plot(X, Y)
+    plt.xlabel('X-axis')
+    plt.ylabel('Y-axis')
     
-
-
-    ax = plt.figure().add_subplot(projection='3d')
-    ax.contour(X, Y, Z, cmap=cm.coolwarm)  # Plot contour curves
+    # ax = plt.figure().add_subplot(projection='3d')
+    # ax.contour(X, Y, Z, cmap=cm.coolwarm)  # Plot contour curves
     plt.show()
